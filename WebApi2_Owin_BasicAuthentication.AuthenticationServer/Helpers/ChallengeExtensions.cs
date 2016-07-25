@@ -1,0 +1,30 @@
+﻿using System;
+using System.Net.Http.Headers;
+using System.Web.Http.Filters;
+using WebApi2_Owin_BasicAuthentication.AuthenticationServer.Results;
+
+namespace WebApi2_Owin_BasicAuthentication.AuthenticationServer.Helpers
+{
+    public static class ChallengeExtensions
+    {
+        public static void ChallengeWith(this HttpAuthenticationChallengeContext context, string scheme)
+        {
+            ChallengeWith(context, new AuthenticationHeaderValue(scheme));
+        }
+
+        public static void ChallengeWith(this HttpAuthenticationChallengeContext context, string scheme, string parameter)
+        {
+            ChallengeWith(context, new AuthenticationHeaderValue(scheme, parameter));
+        }
+
+        public static void ChallengeWith(this HttpAuthenticationChallengeContext context, AuthenticationHeaderValue challenge)
+        {
+            if (context == null)
+            {
+                throw new ArgumentNullException("context");
+            }
+
+            context.Result = new UnauthorizedChallengeResult(challenge, context.Result);
+        }
+    }
+}
