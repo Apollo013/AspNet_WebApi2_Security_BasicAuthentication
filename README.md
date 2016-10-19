@@ -1,4 +1,4 @@
-# WebApi2_Owin_BasicAuthentication
+# AspNet_WebApi2_Security_BasicAuthentication
 Demonstrates Basic Authentication in a WebApi2 app using 'IAuthenticationFilter' attribute at action level'.
 
 ---
