@@ -1,18 +1,20 @@
 # AspNet_WebApi2_Security_BasicAuthentication
-Demonstrates Basic Authentication in a WebApi2 app using 'IAuthenticationFilter' attribute at action level'.
+
+Demonstrates Basic Authentication in a WebApi2 app using an 'IAuthenticationFilter' attribute.
 
 ---
 
-Built using VS2015 Community
+Developed using Visual Studio 2015 Community
 
 ---
-###Main Plugins
-|Plugin|
+
+###Techs
+|techs|
 |------|
+|C#|
 |EntityFramework|
-|ASPNet Identity|
+|ASP.Net Identity|
 |OWIN|
-|WebApi Client|
 
 ---
 
