@@ -9,7 +9,7 @@ Developed using Visual Studio 2015 Community
 ---
 
 ###Techs
-|techs|
+|Techs|
 |------|
 |C#|
 |EntityFramework|
